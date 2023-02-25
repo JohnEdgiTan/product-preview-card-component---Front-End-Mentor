@@ -4,29 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- displays site properly based on user's device -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="./main.css">
-    <title>Frontend Mentor | QR code component</title>
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
 </head>
 
 <body>
     <div class="wrapper">
-        <img src="./images/image-qr-code.png" alt="qr-code">
-        <div class="text">
-            <div class="highlight">
-                <p>
-                    <strong>
-                      Improve your front-end skills by building projects
-                    </strong>
-                </p>
+        <div class="left-col">
+            <img src="./images/image-product-desktop.jpg" alt="product image">
+        </div>
+        <div class="right-col">
+            <div class="texts">
+                <div class="perfumetext">
+                    <p>perfume</p>
+                </div>
+                <div class="headertext">
+                    <h1>Gabrielle Essence Eau De Parfum</h1>
+                </div>
+                <div class="paragraphtext">
+                    <p> A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL. </p>
+                </div>
+                <div class="pricetext">
+                    <span> 
+                        <h2>$149.99</h2>
+                    </span>
+                    <p><s>
+                        $169.99 
+                    </s>
+                    </p>
+                </div>
             </div>
-            <div class="paragraph">
-                <p>
-                    Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-                </p>
+            <div class="addcartbutton">
+                <img src="./images/icon-cart.svg" alt="cart icon">
+                <a href="#" class="primarybutton">Add to Cart</a>
             </div>
         </div>
     </div>
